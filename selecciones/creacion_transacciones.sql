@@ -37,6 +37,9 @@ values (9,'12345',10.00,'C','27/08/2024','11:30')
 insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hora)
 values (10,'12345',10.00,'D','27/08/2024','11:30')
 
+insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hora)
+values (23,'12345',499.00,'D','27/09/2024','14:30')
+
 
 
 select * from transacciones 
@@ -47,3 +50,20 @@ where monto between money(200) and money(2000)
 
 select codigo,monto,tipo,fecha from transacciones
 where fecha <> null
+
+update transacciones set tipo='T'
+where monto between money(101) and money(499) and
+fecha between '01/09/2024' and '30/09/2024' and
+hora between '14:00' and '20:00'
+
+select * from transacciones
+where (tipo='C') and (numero_cuenta between '22004' and '222001')
+
+select * from transacciones 
+where (tipo='D') and (fecha= '25/05/2024')
+and (numero_cuenta between '22007' and '22010')
+
+select * from transacciones
+where (codigo between 1 and 5)
+and (numero_cuenta between '22002' and '22004')
+and (fecha between '26/05/2024' and '29/05/2024')

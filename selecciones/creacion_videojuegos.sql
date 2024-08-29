@@ -36,3 +36,17 @@ where valoracion between 9 and 10
 
 select * from videojuegos
 where descripcion is null
+
+update videojuegos set descripcion='Mejor apuntado'
+where valoracion>9
+
+select *from videojuegos
+where nombre like '%c%' or valoracion=7
+
+select * from videojuegos 
+where (codigo between 3 and 7) or (valoracion=7)
+
+select * from videojuegos
+where (nombre='Residen Evil' and valoracion >7 and nombre like 'C%')
+or (valoracion>8 and nombre like 'D%')
+

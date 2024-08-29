@@ -31,6 +31,9 @@ values ('120','1754506458','27/08/2024','17:30')
 insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
 values ('121','1754506459','27/08/2024','17:30')
 
+insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
+values ('121','1754506459','27/09/2024','17:30')
+
 select cedula_empleado,fecha,hora from registros_entrada
 
 select *from registros_entrada
@@ -43,12 +46,13 @@ update registros_entrada set cedula_empleado='082345679'
 where fecha between '01/08/2024' and '31/08/2024'
 
 select * from registros_entrada
-where fecha between '01/09/2024' and '30/09/2024'
+where (fecha between '01/09/2024' and '30/09/2024')
+and (cedula_empleado like '17%')
 
 select * from registros_entrada 
 where (cedula_empleado like '17%') and (hora between '8:00' and '12:00') 
 
 select *from registros_entrada
 where (cedula_empleado like '17%' and hora between '8:00' and '12:00')
-and (cedula_empleado like '08%' and hora between '9:00' and '13:00')
+or (cedula_empleado like '08%' and hora between '9:00' and '13:00')
 

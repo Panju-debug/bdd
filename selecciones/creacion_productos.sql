@@ -33,6 +33,12 @@ values ('1236','Mortadela',1.50,'30')
 insert into productos(codigo,nombre,precio,stock)
 values ('1237','Queso',3.00,'15')
 
+insert into productos(codigo,nombre,precio,stock)
+values ('4337','Jamon',3.00,'15')
+
+insert into productos(codigo,nombre,precio,stock)
+values ('4037','Cachitos',3.00,'0')
+
 select * from productos 
 where nombre like 'Q%'
 

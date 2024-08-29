@@ -41,6 +41,12 @@ values ('13144','17223','29/06/2024',1000);
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('01544','17323','29/06/2024',1000)
 
+insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
+values ('01144','20323','29/06/2024',1000)
+
+insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
+values ('01504','17323','29/06/2024',0)
+
 select numero_cuenta,saldo from cuentas 
 
 select * from cuentas

@@ -28,7 +28,14 @@ insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('1734567896','Jorge','Nitales','hola@gmail.com','27/08/2024')
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
+values ('1832567896','Jorge','Nitales','hola@gmail.com','27/08/2024')
+
+insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('1734567897','Elsa','Pato','hola@gmail.com','27/08/2024')
+
+insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
+values ('1734567806','Elsa','Pato','hola@gmail.com','27/08/2024')
+
 
 select nombre,cedula from estudiantes
 
@@ -44,7 +51,7 @@ where cedula like '17%'
 select nombre,apellido from estudiantes
 where nombre like 'M%' or apellido like '%z'
 
-select nombre from estudiantes
+select nombre, apellido from estudiantes
 where cedula like '%32%' and cedula like '18%'
 
 select nombre,apellido from estudiantes

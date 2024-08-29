@@ -8,6 +8,12 @@ insert into videojuegos (codigo,nombre,descripcion,valoracion)
 values (123,'Residen Evil','chido',10)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
+values (123,'Call of Dutty','chido',10)
+
+insert into videojuegos (codigo,nombre,descripcion,valoracion)
+values (123,'Dawn Of Fear','chido',10)
+
+insert into videojuegos (codigo,nombre,descripcion,valoracion)
 values (124,'Pokemon','chido',10)
 
 insert into videojuegos (codigo,nombre,descripcion,valoracion)
@@ -47,6 +53,7 @@ select * from videojuegos
 where (codigo between 3 and 7) or (valoracion=7)
 
 select * from videojuegos
-where (nombre='Residen Evil' and valoracion >7 and nombre like 'C%')
+where ( valoracion >7 and nombre like 'C%')
 or (valoracion>8 and nombre like 'D%')
+
 
